@@ -12,6 +12,18 @@ I hold a Master of Science from University of Michigan and four industry certifi
 
 I'm passionate about turning complex business requirements into reliable, governed data products that drive efficiency and cost savings.`;
 
+// Video intro captions with timing (in seconds)
+const VIDEO_CAPTIONS = [
+  { time: 0, text: "Hi! I'm Sreekara Rao" },
+  { time: 2, text: "Data Engineer with 6+ years of experience" },
+  { time: 5, text: "Building scalable data solutions across cloud & on-premises" },
+  { time: 9, text: "Expert in: Databricks, Snowflake, Azure, AWS" },
+  { time: 13, text: "Specializing in: ETL pipelines, SQL optimization, Data governance" },
+  { time: 18, text: "Master of Science — University of Michigan" },
+  { time: 22, text: "Certified: Databricks | AWS | Data Engineering" },
+  { time: 26, text: "Turning complex requirements into reliable data products" }
+];
+
 // Chatbot knowledge base
 const CHATBOT_RESPONSES = {
   databricks: "I have extensive Databricks experience. At Medzown, I build ETL pipelines in Databricks for large-scale analytics, create dbt models with data quality checks, and perform complex SQL tuning. I'm also Databricks Certified Data Engineer Professional.",
@@ -43,7 +55,7 @@ function init() {
   showPage(1);
   attachPageEventListeners();
   handleMissingPhoto();
-  initializeVoiceIntro();
+  initializeVideoIntro();
   initializeChatWidget();
 }
 
@@ -101,36 +113,39 @@ function handleMissingPhoto() {
 }
 
 // ============================================================================
-// AI VOICE INTRODUCTION
+// AI VIDEO INTRODUCTION
 // ============================================================================
-function initializeVoiceIntro() {
-  const playBtn = document.getElementById('playVoiceBtn');
+function initializeVideoIntro() {
+  const playBtn = document.getElementById('playVideoBtn');
   if (!playBtn) return;
 
   let isPlaying = false;
+  let startTime = 0;
+  let animationFrameId = null;
 
   playBtn.addEventListener('click', () => {
     if (isPlaying) {
       speechSynthesis.cancel();
-      playBtn.textContent = '🔊 Play AI Introduction';
+      cancelAnimationFrame(animationFrameId);
+      playBtn.textContent = '▶ Play Introduction';
       playBtn.classList.remove('playing');
+      clearCaptions();
       isPlaying = false;
     } else {
-      speakIntro();
+      startTime = performance.now();
+      playVideoIntro(playBtn, () => {
+        playBtn.textContent = '▶ Play Introduction';
+        playBtn.classList.remove('playing');
+        isPlaying = false;
+      });
       playBtn.textContent = '⏸ Stop';
       playBtn.classList.add('playing');
       isPlaying = true;
     }
   });
-
-  speechSynthesis.addEventListener('end', () => {
-    playBtn.textContent = '🔊 Play AI Introduction';
-    playBtn.classList.remove('playing');
-    isPlaying = false;
-  });
 }
 
-function speakIntro() {
+function playVideoIntro(playBtn, onComplete) {
   speechSynthesis.cancel();
 
   const utterance = new SpeechSynthesisUtterance(INTRO_SCRIPT);
@@ -138,7 +153,54 @@ function speakIntro() {
   utterance.pitch = 1;
   utterance.volume = 1;
 
+  const captionEl = document.getElementById('videoCaptions');
+  let currentCaptionIndex = 0;
+
+  utterance.onstart = () => {
+    const startTime = performance.now();
+
+    function updateCaptions() {
+      const elapsed = (performance.now() - startTime) / 1000;
+
+      // Update caption based on elapsed time
+      while (
+        currentCaptionIndex < VIDEO_CAPTIONS.length &&
+        elapsed >= VIDEO_CAPTIONS[currentCaptionIndex].time
+      ) {
+        displayCaption(VIDEO_CAPTIONS[currentCaptionIndex].text);
+        currentCaptionIndex++;
+      }
+
+      if (currentCaptionIndex < VIDEO_CAPTIONS.length) {
+        requestAnimationFrame(updateCaptions);
+      }
+    }
+
+    updateCaptions();
+  };
+
+  utterance.onend = () => {
+    clearCaptions();
+    onComplete();
+  };
+
   speechSynthesis.speak(utterance);
+}
+
+function displayCaption(text) {
+  const captionEl = document.getElementById('videoCaptions');
+  captionEl.textContent = text;
+  captionEl.classList.add('fade-in');
+
+  setTimeout(() => {
+    captionEl.classList.remove('fade-in');
+  }, 400);
+}
+
+function clearCaptions() {
+  const captionEl = document.getElementById('videoCaptions');
+  captionEl.textContent = '';
+  captionEl.classList.remove('fade-in');
 }
 
 // ============================================================================

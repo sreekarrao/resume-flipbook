@@ -64,14 +64,23 @@
 
         <!-- Video Section -->
         <div class="video-section">
-          <h3>AI Voice Introduction</h3>
-          <div class="video-container voice-intro">
-            <div class="voice-player">
-              <button id="playVoiceBtn" class="play-btn">🔊 Play AI Introduction</button>
-              <div class="voice-wave"></div>
+          <h3>AI Video Introduction</h3>
+          <div class="video-container intro-video">
+            <div class="video-player">
+              <div class="video-content">
+                <img src="assets/me.jpg" alt="Sreekara Rao" class="video-photo">
+                <div class="video-placeholder" id="videoPlaceholder">
+                  <span class="initials">SRK</span>
+                </div>
+              </div>
+              <div class="video-controls">
+                <button id="playVideoBtn" class="play-btn-video">▶ Play Introduction</button>
+                <div class="video-progress"></div>
+              </div>
+              <div class="video-captions" id="videoCaptions"></div>
             </div>
           </div>
-          <p class="video-caption">🤖 AI-generated voice introduction to my data engineering expertise</p>
+          <p class="video-caption">🤖 AI-generated video introduction with synchronized captions</p>
         </div>
       </div>
     </section>
