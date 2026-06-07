@@ -302,108 +302,142 @@ function removeLoadingMessage() {
 function downloadResume() {
   const resumeContent = `
 SREEKARA RAO KARANAM
-Data Engineer | Databricks • Snowflake • Azure • AWS
-karanamsreekara273@gmail.com | Chandler, Arizona
-LinkedIn • GitHub • Portfolio: http://localhost:8000
+Data Engineer
+Chandler, Arizona | 313-247-2612
+karanamsreekara273@gmail.com
+LinkedIn: https://www.linkedin.com/in/nvsrk/
+Portfolio: http://localhost:8000
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 PROFESSIONAL SUMMARY
 
-Data Engineer with 6+ years of experience building scalable data solutions across
-cloud and on-premises platforms. Expert in designing robust ETL pipelines,
-optimizing SQL workloads, and implementing data governance frameworks. Proven
-track record delivering enterprise-scale data warehouses and analytics platforms
-serving 100M+ records with 99.9% accuracy.
+Data Engineer with 6+ years of experience in crafting scalable data solutions across
+both cloud and on-premises platforms, utilizing expertise in SSIS, SSRS, SSAS,
+Databricks, Snowflake, and Azure. Demonstrates a visionary approach to building
+robust ETL pipelines and optimizing SQL workloads to drive operational efficiency
+and cost savings. Skilled collaborator, translating complex business requirements
+into innovative technical solutions while ensuring data quality and governance.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 PROFESSIONAL EXPERIENCE
 
 DATA ENGINEER | Medzown (Nov 2025 – Present)
-Building scalable ETL pipelines and data warehouses for healthcare analytics.
-• Designed and implemented robust ETL pipelines in Databricks processing 50M+ records daily
-• Created dbt models with automated data-quality checks and 100% test coverage
-• Tuned complex SQL queries reducing execution time by 40%; optimized Spark jobs for cost efficiency
-• Managed AWS S3 bucket configurations, IAM policies, and data lifecycle management
-• Curated dimensional and fact tables for Power BI dashboards serving 50+ business users
+• Developed ETL pipelines using Databricks (dbx) to process and transform large-scale
+  datasets for analytics and reporting use cases
+• Build and managed dbt models to create standardized, reusable transformation layers,
+  implementing data quality checks and documentation best practices
+• Wrote and optimized complex SQL queries (CTEs, window functions, aggregations) to support
+  data integration, reporting, and performance-sensitive workloads
+• Integrated data pipelines with AWS services (such as S3 and IAM) to enable secure,
+  scalable cloud-based data processing
+• Support downstream analytics and reporting by delivering curated datasets consumed by
+  Power BI and other reporting tools
+• Collaborate within Agile teams using Scrum and Kanban methodologies, managing tasks,
+  stories, and defects through Jira boards
+• Use Git-based version control to manage data engineering code, ensuring proper branching,
+  reviews, and release practices
+• Work closely with business stakeholders to translate data requirements into reliable,
+  scalable data models and pipelines
 
 CLOUD + AI CONSULTANT | Taylor Farms (Dec 2024 – Oct 2025)
-Led modernization of legacy analytics platform from on-premise SSRS to cloud-based Databricks/Power BI.
-• Built Databricks SQL reporting views implementing complex shift scheduling and worker productivity metrics
-• Reverse-engineered 200+ SSRS SQL reports; translated business logic to modern SQL
-• Published 30+ analytical reports to Power BI Report Builder; trained 25+ end-users
-• Developed production KPI dashboards tracking harvest volumes and labor metrics
-• Implemented validation rules ensuring 99.9% data accuracy across supply-chain metrics
+• Wrote SQL queries and created reporting views using Databricks, working with structured
+  data from multiple datasets to support operational reporting
+• Implemented business logic in SQL views, including shift differentials, crew derivation,
+  and worker classifications as per reporting requirements
+• Published completed views to Power BI Report Builder for SSRS-style reports with dynamic
+  parameters and data filtering
+• Accessed and reviewed existing SSRS reports through Citrix using the SSRS Reports EDGE
+  app to map report elements to data sources
+• Used Azure DevOps to track assigned tasks, maintain workflow status, and ensure all views
+  adhered to naming conventions and storage guidelines
+• Reviewed embedded SQL from legacy SSRS reports to reverse-engineer logic and ensure
+  accurate view creation in Databricks for report replication
+• Developed Power BI dashboards and KPIs for supply chain and production performance,
+  enabling leadership to make data-driven decisions on cost optimization and quality improvements
 
 DATA ENGINEER | Tricubic Inc (Jul 2024 – Dec 2024)
-Architected hybrid ETL infrastructure supporting real-time and batch processing across cloud/on-prem.
-• Designed orchestration layer using Azure Data Factory and Apache Airflow supporting 50+ daily pipelines
-• Implemented Kafka-based streaming pipeline ingesting 100k+ events/second with sub-second latency
-• Optimized PySpark transformations achieving 60% reduction in execution time
-• Authored comprehensive unit tests for ETL jobs with 85% code coverage
-• Implemented backward-compatible schema changes handling breaking changes without disruption
+• Built robust ETL pipelines using Azure Data Factory, Databricks, and Airflow to process
+  and orchestrate data workflows across cloud and on-premises sources, ensuring scalability,
+  reliability, and efficient data movement
+• Configured and managed Databricks Jobs and clusters for automated data processing,
+  performance optimization, and cost efficiency; implemented real-time data ingestion using
+  streaming tools like Kafka and Spark
+• Designed end-to-end data workflows in Airflow, creating custom operators and implementing
+  alerting mechanisms for failed tasks to ensure seamless execution and transparency
+• Developed and optimized data transformation processes using PySpark and SQL in Databricks,
+  applying validation checks, performance tuning techniques, and reusable code modules for scalability
+• Used Jira and Bitbucket in an Agile environment to manage tasks, track bugs, and maintain
+  version control; linked code commits to Jira tickets and actively participated in sprint ceremonies
+• Developed and executed test cases for ETL pipelines and PySpark transformations, ensuring
+  data accuracy and integrity across staging and production environments
+• Collaborated with QA teams to perform regression and functional testing on data workflows,
+  validating job dependencies and schema evolution
 
 ASSISTANT SYSTEM ENGINEER | Tata Consultancy Services (May 2021 – Aug 2022)
-Executed enterprise-scale data warehouse migration to Snowflake platform.
-• Led Snowflake migration of 200+ tables with 10B+ records ensuring 100% data integrity
-• Built SQL-based anomaly detection logic identifying discrepancies between source and target
-• Designed Apache Airflow DAGs managing 30+ data flows with error handling and retry mechanisms
-• Implemented Salesforce CRM to Snowflake pipelines for real-time analytics
-• Created technical documentation and trained 15+ team members on Snowflake platform
+Hyderabad, India
+• Migrated enterprise data into Snowflake, ensuring accurate, high-volume data transfer with
+  robust SQL-based validation, anomaly detection, and minimal downtime across environments
+• Designed and managed Snowflake objects such as databases, schemas, tables, views, and
+  stored procedures to support scalable and modular data workflows
+• Developed and scheduled Apache Airflow DAGs to automate ETL processes, integrating with
+  Snowflake for seamless job orchestration, logging, and error handling
+• Utilized Jira and Confluence for sprint planning, story tracking, documentation, and
+  cross-functional collaboration, maintaining visibility and traceability across teams
+• Participated in CI/CD pipelines through Azure DevOps, contributing test automation,
+  performing code reviews, and promoting best practices in SQL and pipeline design
+• Integrated CRM (Salesforce) datasets into Snowflake pipelines, enabling unified customer
+  reporting across regions
+• Automated reporting workflows for CRM sales and marketing analytics, improving visibility
+  into customer interactions and engagement metrics
 
 SOFTWARE ENGINEER | IBridge TechSoft (Jan 2020 – Apr 2021)
-Built enterprise data warehouse solutions using Microsoft SQL Server BI stack.
-• Designed and optimized 100+ stored procedures supporting real-time reporting with sub-second response
-• Built SSIS packages performing complex data transformations; reduced runtime by 35%
-• Developed 50+ SSRS reports and dashboards with drill-through and parameterized features
-• Designed SSAS OLAP cubes and tabular models enabling multidimensional analysis
-• Implemented star schema dimensional modeling supporting 100M+ fact rows
+Hyderabad, India
+• Developed and optimized complex SQL queries, stored procedures, and SSRS reports in
+  Microsoft SQL Server, enabling efficient data extraction, reporting, and business process automation
+• Improved ETL performance and reliability by designing workflows in SQL Server Integration
+  Services (SSIS), tuning queries, and implementing indexing strategies across large-scale
+  relational databases
+• Enhanced data retrieval speeds by 35% through the development of OLAP cubes and tabular
+  models using SQL Server Analysis Services (SSAS), supporting faster and more insightful analytics
+• Documented ETL pipelines, stored procedures, and data models in Confluence, and maintained
+  version control and deployment pipelines using Git, ensuring better collaboration and maintainability
+• Worked in Agile teams using JIRA, actively participating in sprint planning, retrospectives,
+  and daily stand-ups, while managing SQL/reporting tasks and release workflows across development,
+  staging, and production environments
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 TECHNICAL SKILLS
 
 Data Platforms: Databricks, Snowflake, Azure Data Lake, AWS S3, SQL Server
-Programming: Python, PySpark, SQL, Spark, Scala (basic)
-ETL & Orchestration: Apache Airflow, Azure Data Factory, SSIS, dbt
-Cloud Services: AWS (S3, IAM, Lambda), Azure (Data Factory, Databricks)
-BI & Visualization: Power BI, Tableau, SSRS, Power BI Report Builder
-Data Quality: Great Expectations, dbt Tests, Custom Validation Frameworks
-Version Control: Git, GitHub, GitLab
-Methodologies: Agile/Scrum, Data Governance, Schema Design, Performance Tuning
+Programming: Python, PySpark, SQL, Spark, Apache Spark
+ETL & Orchestration: Apache Airflow, Azure Data Factory, SSIS, dbt, API Development
+Cloud Services: AWS (S3, IAM), Azure (Data Factory, Databricks)
+BI & Visualization: Power BI, SSRS, SSAS, Tableau
+Data Technologies: Data Migration, Kafka, Spark Streaming
+Methodologies: Agile/Scrum, Git, Jira, CI/CD, Data Governance
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 EDUCATION
 
-Master of Science in Data Science | University of Michigan, Dearborn (2022-2024)
-Bachelor's Degree in Computer Science | [University Name]
+Master of Science | University of Michigan, Dearborn (Sep 2022 – Apr 2024)
+Focus: Data Science and Engineering
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 CERTIFICATIONS & CREDENTIALS
 
 ✓ Databricks Certified Data Engineer Professional
-✓ AWS Certified Data Engineer Associate
+✓ AWS Certified Data Engineer – Associate
 ✓ Databricks Generative AI Fundamentals
-✓ Python Data Structures and Algorithms
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-KEY ACHIEVEMENTS
-
-• Designed and deployed ETL pipelines processing 100M+ records daily with 99.9% accuracy
-• Optimized Spark jobs reducing execution time by 60% and infrastructure costs by 40%
-• Led successful enterprise data migrations (200+ tables, 10B+ records) with zero data loss
-• Implemented real-time streaming pipelines handling 100k+ events/second with sub-second latency
-• Built comprehensive data quality frameworks reducing production issues by 95%
-• Mentored 15+ team members on modern data engineering best practices and tools
+✓ Python Data Structures
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated: ${new Date().toLocaleDateString()}
-Portfolio: http://localhost:8000
 `;
 
   const element = document.createElement('a');
