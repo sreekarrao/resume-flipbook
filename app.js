@@ -4,7 +4,7 @@
 const RAG_BACKEND_URL = 'http://localhost:3000';
 
 // AI Introduction script
-const INTRO_SCRIPT = `Hi! I'm Sreekara Rao, a Data Engineer with over 5 years of experience building scalable data solutions across cloud and on-premises platforms.
+const INTRO_SCRIPT = `Hi! I'm Sreekara Rao, a Data Engineer with over 6 years of experience building scalable data solutions across cloud and on-premises platforms.
 
 I specialize in designing robust ETL pipelines and optimizing SQL workloads across Databricks, Snowflake, Azure, and AWS. Currently at Medzown as a Data Engineer, I focus on data quality, testing, and governance.
 
@@ -16,7 +16,7 @@ I'm passionate about turning complex business requirements into reliable, govern
 const CHATBOT_RESPONSES = {
   databricks: "I have extensive Databricks experience. At Medzown, I build ETL pipelines in Databricks for large-scale analytics, create dbt models with data quality checks, and perform complex SQL tuning. I'm also Databricks Certified Data Engineer Professional.",
   snowflake: "I've worked extensively with Snowflake. At TCS, I led a Snowflake migration with SQL validation and anomaly detection. I designed Snowflake transformation layers with dbt and optimized queries for 40% faster performance.",
-  experience: "I have 5+ years as a Data Engineer across multiple companies: Medzown (current), Taylor Farms, Tricubic Inc, TCS Hyderabad, and IBridge TechSoft. I started with SQL Server and SSAS, then moved to modern cloud platforms like Databricks and Snowflake.",
+  experience: "I have 6+ years as a Data Engineer across multiple companies: Medzown (current), Taylor Farms, Tricubic Inc, TCS Hyderabad, and IBridge TechSoft. I started with SQL Server and SSAS, then moved to modern cloud platforms like Databricks and Snowflake.",
   skills: "My key skills include: Databricks, Snowflake, Azure, AWS, PySpark, Apache Spark, Airflow, dbt, Kafka, SQL, Python, Power BI, ETL Testing, Data Quality, CI/CD, and Data Migration.",
   projects: "I've led major projects including: Real-Time Data Pipeline (50k+ events/sec with Kafka & Spark), Snowflake Migration (200 tables with 100% accuracy), and dbt Transformation Framework (zero quality incidents).",
   education: "I have a Master of Science from University of Michigan, Dearborn (2022-2024). I also hold four industry certifications: Databricks Data Engineer Professional, AWS Data Engineer Associate, Databricks Generative AI Fundamentals, and Python Data Structures.",
