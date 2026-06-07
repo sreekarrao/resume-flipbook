@@ -54,7 +54,6 @@ const pageIndicator = document.getElementById('pageIndicator');
 function init() {
   showPage(1);
   attachPageEventListeners();
-  handleMissingPhoto();
   initializeVideoIntro();
   initializeChatWidget();
 }
@@ -89,27 +88,6 @@ function prevPage() {
   if (currentPage > 1) {
     showPage(currentPage - 1);
   }
-}
-
-function handleMissingPhoto() {
-  const profilePhoto = document.querySelector('.profile-photo');
-  const photoPlaceholder = document.getElementById('photoPlaceholder');
-
-  if (!profilePhoto) return;
-
-  if (!profilePhoto.complete || profilePhoto.naturalHeight === 0) {
-    profilePhoto.style.display = 'none';
-    if (photoPlaceholder) {
-      photoPlaceholder.style.display = 'flex';
-    }
-  }
-
-  profilePhoto.addEventListener('error', () => {
-    profilePhoto.style.display = 'none';
-    if (photoPlaceholder) {
-      photoPlaceholder.style.display = 'flex';
-    }
-  });
 }
 
 // ============================================================================
