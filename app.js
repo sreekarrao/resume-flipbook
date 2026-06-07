@@ -58,7 +58,6 @@ function init() {
   initializeChatWidget();
   initializeResumeDownload();
   initializePageNavigation();
-  initializeHomeActions();
 }
 
 function showPage(pageNum) {
