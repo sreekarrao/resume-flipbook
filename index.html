@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sreekara Rao — Data Engineer. Interactive resume flipbook with AI chat. Databricks, Snowflake, AWS, ETL pipelines. 5+ years building scalable data platforms.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Sreekara Rao — Data Engineer | Interactive Resume</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..700&family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" media="print" href="print.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-content">
+    <div class="header-left">
+      <a href="/" class="home-btn" aria-label="Go to home page">← Home</a>
+      <h1 class="brand">Sreekara Rao</h1>
+    </div>
+    <a href="mailto:karanamsreekara273@gmail.com" class="contact-btn">📧 Contact Me</a>
+  </div>
+</header>
+
+<main class="flipbook-container">
+  <div class="pages-wrapper" id="pagesWrapper">
+
+    <!-- Page 1: About -->
+    <section class="page" data-page="1">
+      <div class="page-content page-about">
+        <div class="about-grid">
+          <!-- Photo Section -->
+          <div class="photo-column">
+            <div class="photo-container">
+              <img src="assets/me.jpg" alt="Sreekara Rao Karanam" class="profile-photo">
+              <div class="photo-placeholder" id="photoPlaceholder">
+                <span class="initials">SRK</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Section -->
+          <div class="about-column">
+            <div class="about-header">
+              <div class="eyebrow">Data Engineer</div>
+              <h2 class="name">Sreekara Rao<br>Karanam</h2>
+              <div class="location">📍 Chandler, Arizona</div>
+            </div>
+
+            <p class="about-text">
+              Data Engineer who builds scalable data solutions across cloud and on-premises platforms, with hands-on expertise in Databricks, Snowflake, Azure, AWS, and the SQL Server BI stack (SSIS, SSRS, SSAS). I design robust ETL pipelines and optimize SQL workloads to drive efficiency and cost savings, with a strong focus on data quality, testing, and governance. I hold a Master of Science from the University of Michigan and four data-engineering certifications.
+            </p>
+
+            <div class="contact-section">
+              <a href="mailto:karanamsreekara273@gmail.com" class="contact-link">✉ karanamsreekara273@gmail.com</a>
+            </div>
+
+            <button class="cta-btn" id="page1NextBtn" aria-label="Next page">Next →</button>
+          </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+          <h3>AI Voice Introduction</h3>
+          <div class="video-container voice-intro">
+            <div class="voice-player">
+              <button id="playVoiceBtn" class="play-btn">🔊 Play AI Introduction</button>
+              <div class="voice-wave"></div>
+            </div>
+          </div>
+          <p class="video-caption">🤖 AI-generated voice introduction to my data engineering expertise</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 2: Experience -->
+    <section class="page" data-page="2">
+      <div class="page-content page-experience">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p class="section-subtitle">Career timeline and roles</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-date">Nov 2025 — Present</div>
+                <h3 class="job-title">Data Engineer</h3>
+                <div class="job-company">Medzown</div>
+              </div>
+              <ul class="job-bullets">
+                <li>ETL pipelines in Databricks for large-scale analytics datasets</li>
+                <li>dbt models with data-quality checks and documentation</li>
+                <li>Complex SQL tuning; AWS (S3, IAM) integration; curated data for Power BI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-date">Dec 2024 — Oct 2025</div>
+                <h3 class="job-title">Cloud + AI Consultant</h3>
+                <div class="job-company">Taylor Farms</div>
+              </div>
+              <ul class="job-bullets">
+                <li>Databricks reporting views encoding shift/crew/worker business logic</li>
+                <li>Reverse-engineered legacy SSRS SQL; published to Power BI Report Builder</li>
+                <li>Supply-chain & production KPIs and dashboards for leadership</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-date">Jul 2024 — Dec 2024</div>
+                <h3 class="job-title">Data Engineer</h3>
+                <div class="job-company">Tricubic Inc</div>
+              </div>
+              <ul class="job-bullets">
+                <li>ETL with Azure Data Factory, Databricks, Airflow across cloud + on-prem</li>
+                <li>Real-time ingestion with Kafka & Spark; tuned PySpark transformations</li>
+                <li>Authored ETL/PySpark test cases; QA on regression & schema evolution</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-date">May 2021 — Aug 2022</div>
+                <h3 class="job-title">Assistant System Engineer</h3>
+                <div class="job-company">Tata Consultancy Services · Hyderabad</div>
+              </div>
+              <ul class="job-bullets">
+                <li>Snowflake migration with SQL validation & anomaly detection</li>
+                <li>Airflow DAGs for orchestration; Salesforce CRM into Snowflake</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-date">Jan 2020 — Apr 2021</div>
+                <h3 class="job-title">Software Engineer</h3>
+                <div class="job-company">IBridge TechSoft · Hyderabad</div>
+              </div>
+              <ul class="job-bullets">
+                <li>SQL, stored procs, SSRS reports in SQL Server; SSIS ETL tuning</li>
+                <li>OLAP cubes & tabular models in SSAS (~35% faster retrieval)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 3: Skills -->
+    <section class="page" data-page="3">
+      <div class="page-content page-skills">
+        <div class="section-header">
+          <h2>Technical Toolkit</h2>
+          <p class="section-subtitle">Core competencies and platforms</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4 class="skill-group-title">Platforms & Warehouses</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Databricks</span>
+              <span class="skill-tag">Snowflake</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">SQL Server</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Pipelines & Processing</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">PySpark</span>
+              <span class="skill-tag">Apache Spark</span>
+              <span class="skill-tag">Airflow</span>
+              <span class="skill-tag">Azure Data Factory</span>
+              <span class="skill-tag">dbt</span>
+              <span class="skill-tag">Kafka</span>
+              <span class="skill-tag">SSIS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Languages & Analytics</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">SSRS</span>
+              <span class="skill-tag">SSAS / OLAP</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Practices</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Migration</span>
+              <span class="skill-tag">ETL Testing</span>
+              <span class="skill-tag">Data Quality</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">API Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 4: Projects -->
+    <section class="page" data-page="4">
+      <div class="page-content page-projects">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p class="section-subtitle">Recent work and case studies</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Real-Time Data Pipeline (Kafka + Spark)</h3>
+            </div>
+            <div class="project-body">
+              <div class="project-field">
+                <label>Problem</label>
+                <p>Legacy batch ETL system couldn't handle 50k+ streaming events/sec. Data latency was 4+ hours, blocking real-time decision-making for operations team.</p>
+              </div>
+              <div class="project-field">
+                <label>Solution</label>
+                <p>Designed and built a real-time data pipeline using Kafka for ingestion, PySpark for transformation, and Delta Lake for storage. Implemented stateful stream processing with exactly-once semantics.</p>
+              </div>
+              <div class="project-field">
+                <label>Stack</label>
+                <div class="tech-stack">
+                  <span class="tech-badge">Kafka</span>
+                  <span class="tech-badge">PySpark</span>
+                  <span class="tech-badge">Databricks</span>
+                  <span class="tech-badge">Delta Lake</span>
+                  <span class="tech-badge">Python</span>
+                </div>
+              </div>
+              <div class="project-field">
+                <label>Outcome</label>
+                <p><strong>Result:</strong> Reduced data latency from 4 hours to <strong>under 5 minutes</strong>. Processed 50k+ events/sec consistently. Saved $120k annually on cloud compute through optimized resource allocation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Snowflake Migration & Optimization</h3>
+            </div>
+            <div class="project-body">
+              <div class="project-field">
+                <label>Problem</label>
+                <p>200+ legacy SQL Server tables had to migrate to Snowflake. Required 100% data validation, zero downtime, and performance parity with existing queries (some running 10+ minutes).</p>
+              </div>
+              <div class="project-field">
+                <label>Solution</label>
+                <p>Built automated migration framework with row-count validation, schema comparison, and query performance benchmarking. Used dbt for transformation layer with data quality tests. Executed parallel migration with shadow traffic validation.</p>
+              </div>
+              <div class="project-field">
+                <label>Stack</label>
+                <div class="tech-stack">
+                  <span class="tech-badge">Snowflake</span>
+                  <span class="tech-badge">dbt</span>
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">SQL</span>
+                  <span class="tech-badge">Airflow</span>
+                </div>
+              </div>
+              <div class="project-field">
+                <label>Outcome</label>
+                <p><strong>Result:</strong> Migrated 200 tables with <strong>100% data accuracy</strong>. Optimized queries run <strong>40% faster</strong> via clustering keys. Reduced monthly cloud costs by <strong>35%</strong> ($85k savings).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">dbt Transformation & Data Quality Framework</h3>
+            </div>
+            <div class="project-body">
+              <div class="project-field">
+                <label>Problem</label>
+                <p>Fragmented SQL scripts scattered across 15+ locations. No versioning, no testing, no documentation. Data quality issues were detected post-analysis (too late). CI/CD pipeline didn't exist.</p>
+              </div>
+              <div class="project-field">
+                <label>Solution</label>
+                <p>Implemented dbt with modular transformation layers (staging → intermediate → marts). Added dbt tests for null checks, uniqueness, referential integrity. Integrated with Git for version control and Airflow for orchestration. Built automated data quality dashboard.</p>
+              </div>
+              <div class="project-field">
+                <label>Stack</label>
+                <div class="tech-stack">
+                  <span class="tech-badge">dbt</span>
+                  <span class="tech-badge">Snowflake</span>
+                  <span class="tech-badge">Git</span>
+                  <span class="tech-badge">Airflow</span>
+                  <span class="tech-badge">SQL</span>
+                </div>
+              </div>
+              <div class="project-field">
+                <label>Outcome</label>
+                <p><strong>Result:</strong> <strong>Zero data quality incidents</strong> in 12 months (vs 15+ annually before). <strong>50% reduction</strong> in transformation debugging time. <strong>100% documentation</strong> via dbt catalog. CI/CD cut deployment time from 2 hours to 10 minutes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 5: Credentials -->
+    <section class="page" data-page="5">
+      <div class="page-content page-credentials">
+        <div class="section-header">
+          <h2>Education & Certifications</h2>
+          <p class="section-subtitle">Degrees and professional credentials</p>
+        </div>
+
+        <div class="credentials-grid">
+          <div class="credential-card education">
+            <div class="credential-icon">🎓</div>
+            <h3 class="credential-title">Master of Science</h3>
+            <p class="credential-org">University of Michigan, Dearborn</p>
+            <p class="credential-date">Sep 2022 — Apr 2024</p>
+          </div>
+
+          <div class="credential-card certification">
+            <div class="credential-icon">✓</div>
+            <h3 class="credential-title">Databricks Certified Data Engineer Professional</h3>
+            <p class="credential-org">Databricks</p>
+          </div>
+
+          <div class="credential-card certification">
+            <div class="credential-icon">✓</div>
+            <h3 class="credential-title">AWS Certified Data Engineer – Associate</h3>
+            <p class="credential-org">Amazon Web Services</p>
+          </div>
+
+          <div class="credential-card certification">
+            <div class="credential-icon">✓</div>
+            <h3 class="credential-title">Databricks Generative AI Fundamentals</h3>
+            <p class="credential-org">Databricks</p>
+          </div>
+
+          <div class="credential-card certification">
+            <div class="credential-icon">✓</div>
+            <h3 class="credential-title">Python Data Structures</h3>
+            <p class="credential-org">Professional Certification</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="app-footer">
+  <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous page">← Previous</button>
+  <span class="page-indicator" id="pageIndicator">1 / 5</span>
+  <button class="nav-btn next-btn" id="nextBtn" aria-label="Next page">Next →</button>
+</footer>
+
+<!-- Floating Chat Widget -->
+<div class="chat-widget-container">
+  <div class="chat-bubble" id="chatToggle">
+    <span class="chat-icon">💬</span>
+  </div>
+
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-widget-header">
+      <h3>Ask Me Anything</h3>
+      <button id="chatClose" class="chat-close-btn">✕</button>
+    </div>
+
+    <div class="chat-widget-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <div class="msg-avatar">AI</div>
+        <div class="msg-text">Hi! Ask me about my experience, skills, or projects. I'm powered by AI and grounded in my real background.</div>
+      </div>
+    </div>
+
+    <div class="chat-widget-input">
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="What's your Databricks experience?"
+        autocomplete="off"
+      >
+      <button id="chatSend">→</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
