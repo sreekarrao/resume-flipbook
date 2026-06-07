@@ -28,11 +28,36 @@
 </header>
 
 <main class="flipbook-container">
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <button class="page-nav-btn" data-page="1" title="About - Home">📄 About</button>
+    <button class="page-nav-btn" data-page="2" title="Experience">💼 Experience</button>
+    <button class="page-nav-btn" data-page="3" title="Skills">🛠️ Skills</button>
+    <button class="page-nav-btn" data-page="4" title="Projects">🚀 Projects</button>
+    <button class="page-nav-btn" data-page="5" title="Credentials">🎓 Credentials</button>
+  </div>
+
   <div class="pages-wrapper" id="pagesWrapper">
 
     <!-- Page 1: About -->
     <section class="page" data-page="1">
       <div class="page-content page-about">
+        <!-- Quick Action Buttons -->
+        <div class="quick-actions">
+          <button class="action-btn action-download" id="downloadResumeBtnHome" title="Download your resume">
+            <span class="btn-icon">📥</span>
+            <span class="btn-text">Download Resume</span>
+          </button>
+          <a href="https://www.linkedin.com/in/nvsrk/" target="_blank" class="action-btn action-linkedin" title="Visit LinkedIn profile">
+            <span class="btn-icon">🔗</span>
+            <span class="btn-text">LinkedIn</span>
+          </a>
+          <a href="mailto:karanamsreekara273@gmail.com" class="action-btn action-contact" title="Send email">
+            <span class="btn-icon">✉️</span>
+            <span class="btn-text">Contact Me</span>
+          </a>
+        </div>
+
         <div class="about-grid">
           <!-- Photo Section -->
           <div class="photo-column">

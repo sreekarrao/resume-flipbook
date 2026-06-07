@@ -57,6 +57,8 @@ function init() {
   initializeVideoIntro();
   initializeChatWidget();
   initializeResumeDownload();
+  initializePageNavigation();
+  initializeHomeActions();
 }
 
 function showPage(pageNum) {
@@ -451,8 +453,34 @@ Generated: ${new Date().toLocaleDateString()}
 
 function initializeResumeDownload() {
   const downloadBtn = document.getElementById('downloadResumeBtn');
+  const downloadBtnHome = document.getElementById('downloadResumeBtnHome');
   if (downloadBtn) {
     downloadBtn.addEventListener('click', downloadResume);
+  }
+  if (downloadBtnHome) {
+    downloadBtnHome.addEventListener('click', downloadResume);
+  }
+}
+
+function initializePageNavigation() {
+  const pageNavBtns = document.querySelectorAll('.page-nav-btn');
+  pageNavBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const pageNum = parseInt(e.target.dataset.page);
+      showPage(pageNum);
+    });
+  });
+}
+
+function initializeHomeActions() {
+  const quickChatBtn = document.getElementById('quickChatBtn');
+  if (quickChatBtn) {
+    quickChatBtn.addEventListener('click', () => {
+      const chatToggle = document.getElementById('chatToggle');
+      if (chatToggle) {
+        chatToggle.click();
+      }
+    });
   }
 }
 
