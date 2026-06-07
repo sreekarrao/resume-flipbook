@@ -56,6 +56,7 @@ function init() {
   attachPageEventListeners();
   initializeVideoIntro();
   initializeChatWidget();
+  initializeResumeDownload();
 }
 
 function showPage(pageNum) {
@@ -293,6 +294,132 @@ function addLoadingMessage() {
 function removeLoadingMessage() {
   const loadingMsg = document.getElementById('loading-msg');
   if (loadingMsg) loadingMsg.remove();
+}
+
+// ============================================================================
+// RESUME DOWNLOAD
+// ============================================================================
+function downloadResume() {
+  const resumeContent = `
+SREEKARA RAO KARANAM
+Data Engineer | Databricks • Snowflake • Azure • AWS
+karanamsreekara273@gmail.com | Chandler, Arizona
+LinkedIn • GitHub • Portfolio: http://localhost:8000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PROFESSIONAL SUMMARY
+
+Data Engineer with 6+ years of experience building scalable data solutions across
+cloud and on-premises platforms. Expert in designing robust ETL pipelines,
+optimizing SQL workloads, and implementing data governance frameworks. Proven
+track record delivering enterprise-scale data warehouses and analytics platforms
+serving 100M+ records with 99.9% accuracy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PROFESSIONAL EXPERIENCE
+
+DATA ENGINEER | Medzown (Nov 2025 – Present)
+Building scalable ETL pipelines and data warehouses for healthcare analytics.
+• Designed and implemented robust ETL pipelines in Databricks processing 50M+ records daily
+• Created dbt models with automated data-quality checks and 100% test coverage
+• Tuned complex SQL queries reducing execution time by 40%; optimized Spark jobs for cost efficiency
+• Managed AWS S3 bucket configurations, IAM policies, and data lifecycle management
+• Curated dimensional and fact tables for Power BI dashboards serving 50+ business users
+
+CLOUD + AI CONSULTANT | Taylor Farms (Dec 2024 – Oct 2025)
+Led modernization of legacy analytics platform from on-premise SSRS to cloud-based Databricks/Power BI.
+• Built Databricks SQL reporting views implementing complex shift scheduling and worker productivity metrics
+• Reverse-engineered 200+ SSRS SQL reports; translated business logic to modern SQL
+• Published 30+ analytical reports to Power BI Report Builder; trained 25+ end-users
+• Developed production KPI dashboards tracking harvest volumes and labor metrics
+• Implemented validation rules ensuring 99.9% data accuracy across supply-chain metrics
+
+DATA ENGINEER | Tricubic Inc (Jul 2024 – Dec 2024)
+Architected hybrid ETL infrastructure supporting real-time and batch processing across cloud/on-prem.
+• Designed orchestration layer using Azure Data Factory and Apache Airflow supporting 50+ daily pipelines
+• Implemented Kafka-based streaming pipeline ingesting 100k+ events/second with sub-second latency
+• Optimized PySpark transformations achieving 60% reduction in execution time
+• Authored comprehensive unit tests for ETL jobs with 85% code coverage
+• Implemented backward-compatible schema changes handling breaking changes without disruption
+
+ASSISTANT SYSTEM ENGINEER | Tata Consultancy Services (May 2021 – Aug 2022)
+Executed enterprise-scale data warehouse migration to Snowflake platform.
+• Led Snowflake migration of 200+ tables with 10B+ records ensuring 100% data integrity
+• Built SQL-based anomaly detection logic identifying discrepancies between source and target
+• Designed Apache Airflow DAGs managing 30+ data flows with error handling and retry mechanisms
+• Implemented Salesforce CRM to Snowflake pipelines for real-time analytics
+• Created technical documentation and trained 15+ team members on Snowflake platform
+
+SOFTWARE ENGINEER | IBridge TechSoft (Jan 2020 – Apr 2021)
+Built enterprise data warehouse solutions using Microsoft SQL Server BI stack.
+• Designed and optimized 100+ stored procedures supporting real-time reporting with sub-second response
+• Built SSIS packages performing complex data transformations; reduced runtime by 35%
+• Developed 50+ SSRS reports and dashboards with drill-through and parameterized features
+• Designed SSAS OLAP cubes and tabular models enabling multidimensional analysis
+• Implemented star schema dimensional modeling supporting 100M+ fact rows
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TECHNICAL SKILLS
+
+Data Platforms: Databricks, Snowflake, Azure Data Lake, AWS S3, SQL Server
+Programming: Python, PySpark, SQL, Spark, Scala (basic)
+ETL & Orchestration: Apache Airflow, Azure Data Factory, SSIS, dbt
+Cloud Services: AWS (S3, IAM, Lambda), Azure (Data Factory, Databricks)
+BI & Visualization: Power BI, Tableau, SSRS, Power BI Report Builder
+Data Quality: Great Expectations, dbt Tests, Custom Validation Frameworks
+Version Control: Git, GitHub, GitLab
+Methodologies: Agile/Scrum, Data Governance, Schema Design, Performance Tuning
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EDUCATION
+
+Master of Science in Data Science | University of Michigan, Dearborn (2022-2024)
+Bachelor's Degree in Computer Science | [University Name]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CERTIFICATIONS & CREDENTIALS
+
+✓ Databricks Certified Data Engineer Professional
+✓ AWS Certified Data Engineer Associate
+✓ Databricks Generative AI Fundamentals
+✓ Python Data Structures and Algorithms
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KEY ACHIEVEMENTS
+
+• Designed and deployed ETL pipelines processing 100M+ records daily with 99.9% accuracy
+• Optimized Spark jobs reducing execution time by 60% and infrastructure costs by 40%
+• Led successful enterprise data migrations (200+ tables, 10B+ records) with zero data loss
+• Implemented real-time streaming pipelines handling 100k+ events/second with sub-second latency
+• Built comprehensive data quality frameworks reducing production issues by 95%
+• Mentored 15+ team members on modern data engineering best practices and tools
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Generated: ${new Date().toLocaleDateString()}
+Portfolio: http://localhost:8000
+`;
+
+  const element = document.createElement('a');
+  const file = new Blob([resumeContent], { type: 'text/plain' });
+  element.href = URL.createObjectURL(file);
+  element.download = 'Sreekara_Rao_Data_Engineer_Resume.txt';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
+function initializeResumeDownload() {
+  const downloadBtn = document.getElementById('downloadResumeBtn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', downloadResume);
+  }
 }
 
 // ============================================================================
