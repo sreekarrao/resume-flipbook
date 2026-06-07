@@ -34,18 +34,7 @@
           <!-- Photo Section -->
           <div class="photo-column">
             <div class="photo-container">
-              <svg class="profile-avatar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
-                  </linearGradient>
-                </defs>
-                <rect width="200" height="200" fill="url(#avatarGrad)"/>
-                <circle cx="100" cy="70" r="35" fill="rgba(255,255,255,0.2)"/>
-                <circle cx="100" cy="70" r="28" fill="rgba(255,255,255,0.15)"/>
-                <text x="100" y="155" font-size="56" font-weight="700" text-anchor="middle" fill="white" font-family="Syne, sans-serif">SR</text>
-              </svg>
+              <img src="data:image/jpeg;base64,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" alt="Sreekara Rao" class="profile-photo">
               <div class="photo-placeholder" id="photoPlaceholder" style="display:none;">
                 <span class="initials">SRK</span>
               </div>
@@ -78,18 +67,7 @@
           <div class="video-container intro-video">
             <div class="video-player">
               <div class="video-content">
-                <svg class="video-avatar" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="videoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="300" fill="url(#videoGrad)"/>
-                  <circle cx="200" cy="100" r="60" fill="rgba(255,255,255,0.2)"/>
-                  <circle cx="200" cy="100" r="48" fill="rgba(255,255,255,0.15)"/>
-                  <text x="200" y="220" font-size="84" font-weight="700" text-anchor="middle" fill="white" font-family="Syne, sans-serif">SR</text>
-                </svg>
+                <img src="data:image/jpeg;base64,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" alt="Sreekara Rao Video" class="video-photo">
                 <div class="video-placeholder" id="videoPlaceholder" style="display:none;">
                   <span class="initials">SRK</span>
                 </div>
@@ -123,10 +101,13 @@
                 <h3 class="job-title">Data Engineer</h3>
                 <div class="job-company">Medzown</div>
               </div>
+              <div class="job-description">Building scalable ETL pipelines and data warehouses supporting analytics across healthcare and life sciences domains.</div>
               <ul class="job-bullets">
-                <li>ETL pipelines in Databricks for large-scale analytics datasets</li>
-                <li>dbt models with data-quality checks and documentation</li>
-                <li>Complex SQL tuning; AWS (S3, IAM) integration; curated data for Power BI</li>
+                <li><strong>Pipeline Development:</strong> Designed and implemented robust ETL pipelines in Databricks processing 50M+ records daily from multiple sources</li>
+                <li><strong>Data Transformation:</strong> Created dbt models with automated data-quality checks and comprehensive documentation; achieved 100% test coverage</li>
+                <li><strong>Performance Optimization:</strong> Tuned complex SQL queries reducing query execution time by 40%; optimized Spark jobs for cost efficiency</li>
+                <li><strong>Cloud Integration:</strong> Managed AWS S3 bucket configurations, IAM policies, and data lifecycle management for cost optimization</li>
+                <li><strong>BI & Analytics:</strong> Curated dimensional and fact tables for Power BI dashboards serving 50+ business users</li>
               </ul>
             </div>
           </div>
@@ -139,10 +120,13 @@
                 <h3 class="job-title">Cloud + AI Consultant</h3>
                 <div class="job-company">Taylor Farms</div>
               </div>
+              <div class="job-description">Led modernization of legacy analytics platform; migrated from on-premise SSRS to cloud-based Databricks and Power BI infrastructure.</div>
               <ul class="job-bullets">
-                <li>Databricks reporting views encoding shift/crew/worker business logic</li>
-                <li>Reverse-engineered legacy SSRS SQL; published to Power BI Report Builder</li>
-                <li>Supply-chain & production KPIs and dashboards for leadership</li>
+                <li><strong>Business Logic Encoding:</strong> Built Databricks SQL reporting views implementing complex shift scheduling, crew management, and worker productivity metrics</li>
+                <li><strong>Legacy System Migration:</strong> Reverse-engineered 200+ SSRS SQL reports; translated business logic to modern SQL syntax in Databricks</li>
+                <li><strong>BI Dashboard Development:</strong> Published 30+ analytical reports to Power BI Report Builder; trained 25+ end-users on self-service analytics</li>
+                <li><strong>Supply Chain Analytics:</strong> Developed production KPI dashboards tracking harvest volumes, processing efficiency, and labor metrics for executive leadership</li>
+                <li><strong>Data Quality Assurance:</strong> Implemented validation rules and reconciliation processes ensuring 99.9% data accuracy across supply-chain metrics</li>
               </ul>
             </div>
           </div>
@@ -155,10 +139,13 @@
                 <h3 class="job-title">Data Engineer</h3>
                 <div class="job-company">Tricubic Inc</div>
               </div>
+              <div class="job-description">Architected and maintained hybrid ETL infrastructure supporting real-time and batch data processing across cloud and on-premise environments.</div>
               <ul class="job-bullets">
-                <li>ETL with Azure Data Factory, Databricks, Airflow across cloud + on-prem</li>
-                <li>Real-time ingestion with Kafka & Spark; tuned PySpark transformations</li>
-                <li>Authored ETL/PySpark test cases; QA on regression & schema evolution</li>
+                <li><strong>Hybrid ETL Architecture:</strong> Designed orchestration layer using Azure Data Factory and Apache Airflow supporting 50+ daily pipelines across cloud (Databricks) and on-premises (SQL Server)</li>
+                <li><strong>Real-Time Data Ingestion:</strong> Implemented Kafka-based streaming pipeline ingesting 100k+ events/second; built Spark consumers for real-time transformations with sub-second latency</li>
+                <li><strong>Performance Tuning:</strong> Optimized PySpark transformations achieving 60% reduction in execution time through partitioning strategies and broadcast joins</li>
+                <li><strong>Quality Assurance Framework:</strong> Authored comprehensive unit tests for ETL jobs and PySpark transformations with 85% code coverage</li>
+                <li><strong>Schema Evolution Management:</strong> Implemented backward-compatible schema changes handling breaking changes without pipeline disruption</li>
               </ul>
             </div>
           </div>
@@ -171,9 +158,13 @@
                 <h3 class="job-title">Assistant System Engineer</h3>
                 <div class="job-company">Tata Consultancy Services · Hyderabad</div>
               </div>
+              <div class="job-description">Executed enterprise-scale data warehouse migration from legacy on-premise systems to cloud-based Snowflake platform.</div>
               <ul class="job-bullets">
-                <li>Snowflake migration with SQL validation & anomaly detection</li>
-                <li>Airflow DAGs for orchestration; Salesforce CRM into Snowflake</li>
+                <li><strong>Data Migration:</strong> Led Snowflake migration of 200+ tables with 10B+ records; implemented validation framework ensuring 100% data integrity</li>
+                <li><strong>Anomaly Detection:</strong> Built SQL-based anomaly detection logic identifying data discrepancies and reconciliation issues between source and target</li>
+                <li><strong>Workflow Orchestration:</strong> Designed Apache Airflow DAGs managing 30+ data flows with error handling and retry mechanisms</li>
+                <li><strong>CRM Integration:</strong> Implemented Salesforce CRM to Snowflake pipelines processing daily transaction data for real-time analytics</li>
+                <li><strong>Documentation & Training:</strong> Created comprehensive technical documentation and trained 15+ team members on Snowflake platform</li>
               </ul>
             </div>
           </div>
@@ -186,9 +177,13 @@
                 <h3 class="job-title">Software Engineer</h3>
                 <div class="job-company">IBridge TechSoft · Hyderabad</div>
               </div>
+              <div class="job-description">Built enterprise data warehouse solutions using Microsoft SQL Server BI stack; delivered analytics and reporting infrastructure.</div>
               <ul class="job-bullets">
-                <li>SQL, stored procs, SSRS reports in SQL Server; SSIS ETL tuning</li>
-                <li>OLAP cubes & tabular models in SSAS (~35% faster retrieval)</li>
+                <li><strong>SQL Development:</strong> Designed and optimized 100+ stored procedures supporting real-time reporting; wrote query execution plans achieving sub-second response times</li>
+                <li><strong>ETL Development:</strong> Built SSIS packages performing complex data transformations; optimized package execution reducing runtime by 35%</li>
+                <li><strong>Reporting Solutions:</strong> Developed 50+ SSRS reports and dashboards; implemented drill-through and parameterized reports for executive dashboards</li>
+                <li><strong>OLAP Analysis:</strong> Designed SSAS OLAP cubes and tabular models enabling multidimensional analysis; achieved 35% faster query retrieval through dimension optimization</li>
+                <li><strong>Data Warehouse Design:</strong> Implemented star schema dimensional modeling supporting 100M+ fact rows with optimized fact and dimension tables</li>
               </ul>
             </div>
           </div>
